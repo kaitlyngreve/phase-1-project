@@ -28,3 +28,7 @@ const btn = document.getElementById('generator-button');
 btn.addEventListener('mouseover', function(e) {
     e.target.style.backgroundColor = 'blue';
 })
+
+btn.addEventListener('mouseout', function(e) {
+    e.target.style.backgroundColor = 'tomato';
+})
