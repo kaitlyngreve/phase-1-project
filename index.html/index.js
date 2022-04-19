@@ -23,3 +23,8 @@ function renderActivity(activityObj) {
 
 fetchActivities()
 
+// mouse over event
+const btn = document.getElementById('generator-button');
+btn.addEventListener('mouseover', function(e) {
+    e.target.style.backgroundColor = 'blue';
+})
