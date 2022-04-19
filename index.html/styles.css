@@ -1,0 +1,29 @@
+body {
+    text-align: center;
+}
+
+#header {
+    font-size: 100px;
+    color: rgb(43, 94, 97);
+}
+
+#generator-button-container {
+    margin: 45px;
+    padding: 0px;
+}
+
+#generator-button {
+    width: 400px;
+    height: 200px;
+    font-size: 30px;
+}
+
+#activity-results {
+    margin: 45px;
+    padding: 45px;
+}
+
+#activity-filter-container {
+    margin: 45px;
+}
+
