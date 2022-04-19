@@ -4,7 +4,8 @@ body {
 
 #header {
     font-size: 100px;
-    color: rgb(43, 94, 97);
+    color: rgb(8, 8, 72);
+    text-shadow: 2px 2px 3px tomato;
 }
 
 #generator-button-container {
@@ -16,6 +17,7 @@ body {
     width: 400px;
     height: 200px;
     font-size: 30px;
+    background-color: tomato;
 }
 
 #activity-results {
