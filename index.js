@@ -14,21 +14,22 @@ function fetchActivities() {
 function renderActivity(activityObj) {
     console.log(activityObj)
     // console.log(activityObj.activity)
-    const actContainer = document.querySelector('#activity-results')
+    const actContainer = document.querySelector('#activity-result-container')
     const activityElement = document.getElementById('activity-result')
     activityElement.textContent = activityObj.activity
     // console.log(activityElement)
     actContainer.append(activityElement)
     btn.addEventListener('click', (e) => handleClick(e, activityObj))
 }
+
 function handleClick(e, activityObj) {
     // grab the element
     const featuredElement = document.getElementById('activity-result')
+    // console.log(featuredElement)
     // modify the element
     featuredElement.textContent = activityObj.activity
-    
-
-    // location.reload()
+    console.log(activityObj.activity)
+    location.reload()
     console.log(e)
 }
 
