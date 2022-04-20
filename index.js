@@ -12,18 +12,25 @@ function fetchActivities() {
 //callback functions
 
 function renderActivity(activityObj) {
-    // console.log(activityObj)
+    console.log(activityObj)
     // console.log(activityObj.activity)
     const actContainer = document.querySelector('#activity-results')
-    const activityElement = document.createElement('h4')
+    const activityElement = document.getElementById('activity-result')
     activityElement.textContent = activityObj.activity
     // console.log(activityElement)
     actContainer.append(activityElement)
-    // btn.addEventListener('click', (e) => {handleClick(e, activityObj)})
+    btn.addEventListener('click', (e) => handleClick(e, activityObj))
 }
-//  function handleClick(e) {
-//     //  console.log(handleClick)
-//  }
+function handleClick(e, activityObj) {
+    // grab the element
+    const featuredElement = document.getElementById('activity-result')
+    // modify the element
+    featuredElement.textContent = activityObj.activity
+    
+
+    // location.reload()
+    console.log(e)
+}
 
 
 
@@ -31,13 +38,13 @@ function renderActivity(activityObj) {
 
 // mouse over event
 
-// btn.addEventListener('mouseover', function(e) {
-//     e.target.style.backgroundColor = '#FFC300';
-// })
+btn.addEventListener('mouseover', function(e) {
+    e.target.style.backgroundColor = '#FFC300';
+})
 
-// btn.addEventListener('mouseout', function(e) {
-//     e.target.style.backgroundColor = 'tomato';
-// })
+btn.addEventListener('mouseout', function(e) {
+    e.target.style.backgroundColor = 'tomato';
+})
 
 // grab the button
 const form = document.getElementById("activity-filter-form")
@@ -63,6 +70,7 @@ function handleSubmitForm(e) {
     .then(resp => resp.json())
     .then(activityObj => renderActivity(activityObj))
 
+    form.reset()
 }
 // invoke function
 fetchActivities()
