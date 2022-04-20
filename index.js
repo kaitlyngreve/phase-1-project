@@ -49,6 +49,7 @@ form.addEventListener('submit', handleSubmitForm)
 // write function for the handleSubmit
 function handleSubmitForm(e) {
     e.preventDefault()
+    console.log(e);
     // console.log(e.target.value)
     const radios = document.getElementsByClassName('radio')
     console.log(Array.from(radios))
@@ -57,7 +58,7 @@ function handleSubmitForm(e) {
             return btn.value
         } 
     }).value
-    console.log(filterActivity.value)
+    console.log(filterActivity)
     fetch(`http://www.boredapi.com/api/activity?type=${filterActivity}`)
     .then(resp => resp.json())
     .then(activityObj => renderActivity(activityObj))
