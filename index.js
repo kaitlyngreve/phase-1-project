@@ -19,7 +19,9 @@ function renderActivity(activityObj) {
     // console.log(activityElement)
     actContainer.append(activityElement)
     btn.addEventListener('click', (e) => {renderActivity(e, activityElement)})
+    
 }
+
 
 
 
