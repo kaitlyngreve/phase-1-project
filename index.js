@@ -1,4 +1,6 @@
 const baseUrl = "https://www.boredapi.com/api/activity"
+const btn = document.getElementById('generator-button');
+
 
 //fetch request
 function fetchActivities() {
@@ -6,6 +8,9 @@ function fetchActivities() {
     .then(resp => resp.json())
     .then(activityObj => renderActivity(activityObj))
 }
+
+
+
 
 
 
@@ -19,6 +24,21 @@ function renderActivity(activityObj) {
     activityElement.textContent = activityObj.activity
     // console.log(activityElement)
     actContainer.append(activityElement)
+
+    btn.addEventListener('click', (e) => {renderActivity(e, activityElement)})
+    
+}
+
+
+
+
+
+
+// mouse over event
+
+btn.addEventListener('mouseover', function(e) {
+    e.target.style.backgroundColor = '#FFC300';
+
 }
 
 fetchActivities()
@@ -27,8 +47,19 @@ fetchActivities()
 const btn = document.getElementById('generator-button');
 btn.addEventListener('mouseover', function(e) {
     e.target.style.backgroundColor = 'blue';
+
 })
 
 btn.addEventListener('mouseout', function(e) {
     e.target.style.backgroundColor = 'tomato';
+
 })
+
+
+
+
+// invoke function
+fetchActivities()
+
+})
+
