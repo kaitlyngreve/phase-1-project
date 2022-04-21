@@ -1,19 +1,35 @@
+html {
+    height: 1vh;
+}
+
 body {
     text-align: center;
-
-    background-color: #f5f3e9;
-
-
 }
+
+.bg {
+    animation: slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #B30077 50%, #FF5500  50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+  }
+  
+  .bg3 {
+    animation-duration:5s;
+  }
 
 #header {
     font-size: 100px;
-
-    color: rgb(8, 8, 72);
-    text-shadow: 2px 2px 3px tomato;
-
-    color: rgb(43, 94, 97);
-
+    color: white;
 }
 
 #generator-button-container {
@@ -25,19 +41,27 @@ body {
     width: 400px;
     height: 200px;
     font-size: 30px;
-
+    color: white;
     background-color: tomato;
     cursor: pointer;
-
-
 }
 
-#activity-results {
+#activity-result {
     margin: 45px;
     padding: 45px;
+    font-size: 50px;
+    color: white;
 }
 
 #activity-filter-container {
     margin: 45px;
 }
 
+@keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
