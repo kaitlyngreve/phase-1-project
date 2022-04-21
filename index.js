@@ -67,7 +67,7 @@ function handleSubmitForm(e) {
         } 
     }).value
     console.log(filterActivity)
-    fetch(`http://www.boredapi.com/api/activity?type=${filterActivity}`)
+    fetch(`https://www.boredapi.com/api/activity?type=${filterActivity}`)
     .then(resp => resp.json())
     .then(activityObj => renderActivity(activityObj))
 
