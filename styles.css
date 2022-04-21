@@ -82,6 +82,7 @@ body {
     padding: 15px;
     font-size: 35px;
     color: white;
+    text-shadow: 2px 2px 3px #0D004D;
     font-family: 'Staatliches', cursive;
 }
 
@@ -97,6 +98,10 @@ body {
     cursor: pointer;
 }
 
+.radio:hover {
+    color: #0D004D;
+}
+
 #button {
     padding: 25px;
 }
@@ -104,9 +109,17 @@ body {
 #submit-button {
     font-family: 'Staatliches', cursive;
     font-size: 19px;
+    color: #0D004D;
+    background-color: white;
+    border: none;
     height: 60px;
     width: 200px;
     cursor: pointer;
+}
+
+#submit-button:hover {
+    background-color: #0D004D;
+    color: white;
 }
 
 @keyframes slide {
