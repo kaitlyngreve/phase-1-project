@@ -44,7 +44,7 @@ btn.addEventListener('mouseover', function(e) {
 })
 
 btn.addEventListener('mouseout', function(e) {
-    e.target.style.backgroundColor = 'tomato';
+    e.target.style.backgroundColor = '#0D004D';
 })
 
 // grab the button

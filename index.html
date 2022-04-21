@@ -5,6 +5,9 @@
     <title>Random Activity Generator</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
 </head>
 <header>
     <div id="header-container">
@@ -17,45 +20,48 @@
 
 <body>
     <div id="generator-button-container">
-        <button id="generator-button">Bored No More</button>
+        <button id="generator-button">click me!</button>
     </div>
-    <div id="activity-result-container">
-        <h4 id="activity-result"></h4>
+    <div id="or-container">
+        <h4>- OR -</h4>
     </div>
     <section id="activity-filter-container">
-        <div id="form-header-container">
-            <h4 id="form-header">Narrow Down Your Results!</h4>
-        </div>
+        
         <form id="activity-filter-form">
             <!-- <div id="category-container"> -->
-            <label>Type of Activity</label>
-            <label>
-                <input class="radio" id="relaxation" type="radio" name="type_of_activity" value="relaxation">
-                Relaxation
-            </label>
-            <label>
-                <input class="radio" id="education" type="radio" name="type_of_activity" value="education">
-                Education
-            </label>
-            <label>
-                <input class="radio" id="cooking" type="radio" name="type_of_activity" value="cooking">
-                Cooking
-            </label>
-            <label>
-                <input class="radio" id="charity" type="radio" name="type_of_activity" value="charity">
-                Charity
-            </label>
-            <label>
-                <input class="radio" id="social" type="radio" name="type_of_activity" value="social">
-                Social
-            </label>
-            <!-- </div> -->
-
-            <div>
-                <button type="submit" id="submit-button">Give Me My Activites</button>
-            </div>
-    </section>
-    </form>
+                <div id="activity-title">
+                    <label>Pick a Category!</label>
+                </div>
+                <label class="radio">
+                    <input class="radio" id="relaxation" type="radio" name="type_of_activity" value="relaxation">
+                    Relaxation
+                </label>
+                <label class="radio">
+                    <input class="radio" id="education" type="radio" name="type_of_activity" value="education">
+                    Education
+                </label>
+                <label class="radio">
+                    <input class="radio" id="cooking" type="radio" name="type_of_activity" value="cooking">
+                    Cooking
+                </label>
+                <label class="radio">
+                    <input class="radio" id="charity" type="radio" name="type_of_activity" value="charity">
+                    Charity
+                </label>
+                <label class="radio">
+                    <input class="radio" id="social" type="radio" name="type_of_activity" value="social">
+                    Social
+                </label>
+                <!-- </div> -->
+                
+                <div id="button">
+                    <button type="submit" id="submit-button">Give Me My Activites</button>
+                </div>
+            </section>
+        </form>
+        <div id="activity-result-container">
+            <h4 id="activity-result"></h4>
+        </div>
 </body>
 
 
