@@ -1,5 +1,5 @@
 html {
-    height: 1vh;
+    height: 100vh;
 }
 
 body {
@@ -30,7 +30,7 @@ body {
 #header {
     font-size: 140px;
     color: white;
-    font-family: 'Staatliches', cursive;
+    font-family: 'Staatliches';
     text-shadow: 2px 2px 3px #0D004D;
     padding: 15px;
     margin: 30px;
@@ -50,7 +50,7 @@ body {
     cursor: pointer;
     border-radius: 50%;
     border: none;
-    font-family: 'Staatliches', cursive;
+    font-family: 'Staatliches';
 }
 
 #activity-result {
@@ -58,7 +58,7 @@ body {
     padding: 45px;
     font-size: 50px;
     color: white;
-    font-family: 'Staatliches', cursive;
+    font-family: 'Staatliches';
     text-align: center;
     text-shadow: 1px 1px 2px #0D004D;
 }
@@ -75,7 +75,7 @@ body {
 #or-container {
     font-size: 35px;
     color: #0D004D;
-    font-family: 'Staatliches', cursive;
+    font-family: 'Staatliches';
 }
 
 #activity-title {
@@ -83,7 +83,7 @@ body {
     font-size: 35px;
     color: white;
     text-shadow: 2px 2px 3px #0D004D;
-    font-family: 'Staatliches', cursive;
+    font-family: 'Staatliches';
 }
 
 #activity-filter-container {
@@ -94,7 +94,7 @@ body {
     font-size: 30px;
     padding: 25px;
     color: white;
-    font-family: 'Staatliches', cursive;
+    font-family: 'Staatliches';
     cursor: pointer;
 }
 
@@ -107,7 +107,7 @@ body {
 }
 
 #submit-button {
-    font-family: 'Staatliches', cursive;
+    font-family: 'Staatliches';
     font-size: 19px;
     color: #0D004D;
     background-color: white;
