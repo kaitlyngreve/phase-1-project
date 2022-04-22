@@ -1,11 +1,14 @@
 const baseUrl = "https://www.boredapi.com/api/activity"
+
 let urlParamters = '';
+
 const btn = document.getElementById('generator-button');
+
 //fetch request
 function fetchActivities() {
     fetch(baseUrl + urlParamters)
-    .then(resp => resp.json())
-    .then(activityObj => renderActivity(activityObj))
+        .then(resp => resp.json())
+        .then(activityObj => renderActivity(activityObj))
 }
 
 
